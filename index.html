@@ -1,186 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ezeokeke Emmanuel | Frontend Developer</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+<!-- NAV -->
 <header>
     <div class="logo">EMMANUEL</div>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#services">Services</a>
-        <a href="#gallery">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero" id="home">
 
-    <img src="https://picsum.photos/300" alt="Profile" class="profile-img">
+    <img src="https://picsum.photos/300" class="profile" alt="profile">
 
     <h1>Hi, I'm <span>Ezeokeke Emmanuel</span></h1>
 
+    <p class="typing"></p>
+
     <p class="hero-text">
-        Aspiring Front-End Developer, Visual Artist, Interior Designer and Entrepreneur from Nigeria.
-        I am building modern websites, user interfaces and interactive web applications.
+        Frontend Developer • UI Designer • Game Developer • Creative Engineer
     </p>
 
-    <a href="#gallery" class="btn">
-        View Projects
-    </a>
+    <div class="buttons">
+
+        <!-- VIEW PROJECTS -->
+        <a href="#projects" class="btn">View Projects</a>
+
+        <!-- CV -->
+        <button class="btn secondary" onclick="openCV()">View CV</button>
+
+        <a href="assets/cv.pdf" class="btn" download>
+            Download CV
+        </a>
+
+        <!-- EMAIL (GMAIL + PREFILL) -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=legendcruiz18@gmail.com&su=Job Opportunity&body=Hi Emmanuel,%0D%0A%0D%0AI would like to contact you regarding a job opportunity.%0D%0A%0D%0ARegards," 
+           target="_blank"
+           class="btn">
+           Send Email
+        </a>
+
+        <!-- FALLBACK EMAIL -->
+        <a href="mailto:legendcruiz18@gmail.com?subject=Job Opportunity&body=Hi Emmanuel, I would like to contact you."
+           class="btn secondary">
+           Open Email App
+        </a>
+
+        <!-- HIRE ME (WELLFOUND) -->
+        <a href="https://wellfound.com/u/ezeokeke-chiagozie-emmanuel"
+           target="_blank"
+           class="btn hire">
+           Hire Me
+        </a>
+
+    </div>
 
 </section>
 
+<!-- ABOUT -->
 <section id="about">
+<h2>About Me</h2>
 
-    <h2>About Me</h2>
-
-    <p>
-        I am a creative entrepreneur from Enugu State, Nigeria.
-        My background in visual art and interior design gives me a strong eye for layout,
-        color and user experience. I am currently learning Front-End Development with HTML,
-        CSS and JavaScript to build modern web applications and work remotely with global companies.
-    </p>
-
+<div class="glass">
+<p>
+I am a frontend developer from Nigeria focused on building modern, responsive and interactive web applications.
+I enjoy turning ideas into real digital experiences using HTML, CSS, and JavaScript.
+</p>
+</div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
+<h2>Skills</h2>
 
-    <h2>My Skills</h2>
-
-    <div class="gallery-grid">
-
-        <div class="card">
-            <h3>HTML</h3>
-        </div>
-
-        <div class="card">
-            <h3>CSS</h3>
-        </div>
-
-        <div class="card">
-            <h3>JavaScript</h3>
-        </div>
-
-        <div class="card">
-            <h3>UI Design</h3>
-        </div>
-
-        <div class="card">
-            <h3>Interior Design</h3>
-        </div>
-
-        <div class="card">
-            <h3>Digital Art</h3>
-        </div>
-
-    </div>
-
+<div class="grid">
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">JavaScript</div>
+<div class="card">UI Design</div>
+<div class="card">Responsive Design</div>
+<div class="card">Game Development</div>
+</div>
 </section>
 
-<section id="services">
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
 
-    <h2>Services</h2>
+<div class="grid">
 
-    <div class="gallery-grid">
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Personal developer portfolio with modern UI.</p>
+<a href="https://github.com/legendcruiz/portfolio-website" target="_blank" class="btn small">GitHub</a>
+</div>
 
-        <div class="card">
-            <h3>Web Design</h3>
-            <p>Responsive websites built with modern technologies.</p>
-        </div>
+<div class="card">
+<h3>WhatsApp Clone</h3>
+<p>Messaging UI clone built with frontend technologies.</p>
+<a href="https://github.com/legendcruiz/whatsapp-clone" target="_blank" class="btn small">GitHub</a>
+</div>
 
-        <div class="card">
-            <h3>Interior Design</h3>
-            <p>Creative room planning and space design.</p>
-        </div>
+<div class="card">
+<h3>Zombie Shooter Game</h3>
+<p>JavaScript canvas survival game with scoring system.</p>
+<a href="https://github.com/legendcruiz/zombie-shooter" target="_blank" class="btn small">GitHub</a>
+</div>
 
-        <div class="card">
-            <h3>Digital Art</h3>
-            <p>Portraits, illustrations and creative artwork.</p>
-        </div>
-
-    </div>
-
+</div>
 </section>
 
-<section id="gallery">
-
-    <h2>Projects</h2>
-
-    <div class="gallery-grid">
-
-        <div class="card">
-            <img src="https://picsum.photos/400/300?random=1" alt="Portfolio Website">
-            <h3>Portfolio Website</h3>
-            <p>Personal portfolio showcasing my skills and projects.</p>
-        </div>
-
-        <div class="card">
-            <img src="https://picsum.photos/400/300?random=2" alt="WhatsApp Clone">
-            <h3>WhatsApp UI Clone</h3>
-            <p>Responsive messaging interface inspired by WhatsApp Web.</p>
-        </div>
-
-        <div class="card">
-            <img src="https://picsum.photos/400/300?random=3" alt="Zombie Shooter">
-            <h3>Zombie Shooter Game</h3>
-            <p>2D browser game built using vanilla JavaScript.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="stats">
-
-    <h2>My Journey</h2>
-
-    <div class="gallery-grid">
-
-        <div class="card">
-            <h3>2026</h3>
-            <p>Started Front-End Development</p>
-        </div>
-
-        <div class="card">
-            <h3>3</h3>
-            <p>Major Portfolio Projects</p>
-        </div>
-
-        <div class="card">
-            <h3>100%</h3>
-            <p>Committed To Learning</p>
-        </div>
-
-    </div>
-
-</section>
+<!-- CONTACT -->
 <section id="contact">
+<h2>Contact</h2>
 
-    <h2>Contact Me</h2>
+<div class="glass">
 
-    <p>Email: legendcruiz18@gmail.com</p>
+<p>Email: <b>legendcruiz18@gmail.com</b></p>
 
-    <br>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=legendcruiz18@gmail.com&su=Contact&body=Hi Emmanuel,%0D%0A%0D%0A"
+   target="_blank"
+   class="btn">
+   Send Email
+</a>
 
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=legendcruiz18@gmail.com"
-       target="_blank"
-       class="btn">
-       Send Me An Email
-    </a>
-
+</div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Emmanuel Portfolio. All Rights Reserved.</p>
+<p>© 2026 Ezeokeke Emmanuel | Frontend Developer Portfolio</p>
 </footer>
+
+<!-- CV MODAL -->
+<div id="cvModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeCV()">&times;</span>
+
+<h2>My CV</h2>
+
+<iframe src="assets/cv.pdf"></iframe>
+
+<a href="assets/cv.pdf" download class="btn">
+Download CV
+</a>
+
+</div>
+
+</div>
+
+<!-- CHATBOT -->
+<div class="chat-bubble" onclick="toggleChat()">💬</div>
+
+<div id="chatBox" class="chat-box hidden">
+
+<div class="chat-header">
+<span>AI Assistant</span>
+<span onclick="toggleChat()">✖</span>
+</div>
+
+<div id="chatMessages" class="chat-messages"></div>
+
+<input id="chatInput" placeholder="Ask about Emmanuel..." />
+
+</div>
 
 </body>
 </html>
